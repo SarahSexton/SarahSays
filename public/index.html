@@ -3,21 +3,33 @@
 <head>
  <meta charset="utf-8"> 
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Socket.io Chat</title>
+ <title>Sarah's Socket.io Chat</title>
  <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
  <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
   <form>
-	<h1>Node.js & Socket.io Chat Room!</h1>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off"/>
-      <button>Send</button>
-    </form>
+        <div class="wrap">
+            <div class="container-fluid">
+                <h1>Node.js & Socket.io Chat Room!</h1>
+                <div id="messages"></div>
+                <div class="push"></div>
+            </div>
+        </div>
+        <div class="footer navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-9">
+                        <input type="text" id="message-box" placeholder="Write a message..." rows="3" class="form-control input-lg">
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <button type="submit" id="send-message-btn" class="btn btn-primary btn-lg btn-block">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
