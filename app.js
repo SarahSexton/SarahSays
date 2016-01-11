@@ -4,7 +4,9 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 
-// IMPORTANT LINE points to /public folder
+
+// IMPORTANT LINE: Point to '/public'
+
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function(socket){

@@ -10,7 +10,6 @@ Microsoft Azure offers a wide array of creation, continuous deployment, and mana
 
 ## The Challenge
 * Create a Node app from scratch or clone an existing Node repo ( including this one! ) 
-* Run the app locally to confirm it's working
 * Modify with your own changes
 * Deploy the Node app to Azure
 * That's it! You've completed the challenge. Show your Node app to a Microsoft booth member and collect your prize! Limited availability.
@@ -76,8 +75,8 @@ It's a very basic Node app. The following files are needed to deploy your Node a
 1. Open 'package.json' in your code editor and modify the YOUR_INFO description with your information.
  
 2. After you've saved and tested your changes, commit them to your computer's local Git repository and then push to your master
-   - **git add .**
-   - **git commit -am "Added my name as an author"**
+   - **git add -A**
+   - **git commit -m "Added my name as an author"**
    - **git push origin master**
  
 
@@ -85,12 +84,12 @@ It's a very basic Node app. The following files are needed to deploy your Node a
 
 Going back to the Azure Portal, we can now push our code to the cloud. There are many ways to deploy code to Azure, but for now, we'll focus on using Git.
 
-1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, **"Set up deployment from source control."** Choose  GitHub.
+1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App > App Services. Once on your web app's page, underneath the **"Settings"** section, look for **"Publishing,"** and the words **"Continuous Deployment."** Choose  GitHub when the option to select a source control appears.
  * Authenticate with your Github credentials and choose your NodeMash project. 
    - Notice that you can select branch configuration, if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment any time a commit is pushed.
    - You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, and installed a virtual enviroment. The Node Package manager installed Express and Socket.io from package.json, collected static files, etc.
 
-3. **You will need to enable or turn on Web Sockets from the "Configure" tab of the Azure Portal.**
+3. **You will need to enable or turn on Web Sockets from the "General" section's "Application settings" tab of the Azure Portal.**
  
 ## Congrats! You've just deployed your app to Azure!
 
@@ -100,7 +99,4 @@ You can find additional resources and information about Azure deployments [here]
 
 If you would like some help creating your site, or are looking for ideas, come by the Microsoft booth, or shoot us a tweet: 
 
-Sarah Sexton [@Saelia](https://twitter.com/Saelia)
-| Heather Shapiro [@microheather](https://twitter.com/microheather)
-| Brian Sherwin [@bsherwin](https://twitter.com/bsherwin)
-| Rachel Weil [@partytimeHXLNT](https://twitter.com/partytimeHXLNT)
+Sarah Sexton [@Saelia](https://twitter.com/Saelia) | David Washington [@dwcares](https://twitter.com/dwcares)
